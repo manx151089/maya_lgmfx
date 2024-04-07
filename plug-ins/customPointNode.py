@@ -3,12 +3,13 @@ import maya.OpenMayaMPx as OpenMayaMPx
 
 class CustomPointNode(OpenMayaMPx.MPxNode):
     kNodeName = "customPointNode"
-    kNodeId = OpenMaya.MTypeId(0x00000001)
-
+    kNodeId = OpenMaya.MTypeId(0x00ff8919)
+    
     # Attributes
+    aTransform = None
     aReferenceFile = None
     aRotation = None
-    aScale = None
+    aScale = [1,1,1]
 
     def __init__(self):
         super(CustomPointNode, self).__init__()
@@ -27,6 +28,7 @@ class CustomPointNode(OpenMayaMPx.MPxNode):
         tAttr.setWritable(True)
         tAttr.setStorable(True)
         tAttr.setKeyable(True)
+        
         CustomPointNode.addAttribute(CustomPointNode.aReferenceFile)
         
         # Transform attribute (double3)
