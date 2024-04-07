@@ -1,0 +1,10 @@
+{
+    "shot":"rnd_001",
+    "seq":"rnd",
+    "user":"user01",
+    "time":"2023/10/15,16:37:00",
+    "referenceFile":"D:\\Tools\\maya\\maya_lgmfx\\examples\\abc\\rnd\\rnd001\\pub\\layout\\v001\\assetPack_layout_building_v001.abc",
+    "transform":[1,0,1],
+    "rotation":[0,45,0],
+    "scale":[10,10,10]
+}
