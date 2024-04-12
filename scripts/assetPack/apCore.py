@@ -72,7 +72,7 @@ def jsonFileToDict(filepath):
 
 def unpackSelectedAssetPacks():
     """placeholder pseudo code"""#brainstorm topic in next iteration
-    pass
+    NotImplementedError("This code is pending for the next release")
 
 
 def loadAssetPack(filepath):
