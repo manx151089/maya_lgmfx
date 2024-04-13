@@ -40,9 +40,9 @@ def createCustomPointNodeFromDict(dict={}):
         if dict['referenceFile'] is not '':
             rFile=dict['referenceFile']
         else:
-            print('blank reference file')
+            raise Warning('blank reference file')
     else:
-        print("No reference file found")
+        raise ValueError("No reference file found")
     transform = [0,0,0]
     rotation = [0,0,0]
     scale = [1,1,1]
@@ -66,13 +66,14 @@ def jsonFileToDict(filepath):
             data = json.load(json_file)
             return data
     except:
-        print("Error: File  not found.")
+        raise ValueError("File  not found.")
         return None
     
 
 def unpackSelectedAssetPacks():
     """placeholder pseudo code"""#brainstorm topic in next iteration
     NotImplementedError("This code is pending for the next release")
+
 
 
 def loadAssetPack(filepath):
